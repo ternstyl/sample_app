@@ -10,34 +10,30 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
-
-
 /* universal */
 
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
-	padding-top: 60px;
+  padding-top: 60px;
 }
 
 section {
-	overflow: auto;
+  overflow: auto;
 }
 
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
   h1 {
-  margin_botom: 10px;
+    margin-bottom: 10px;
   }
 }
-
-
 
 /* typography */
 
@@ -67,7 +63,6 @@ p {
 }
 
 
-
 /* header */
 
 #logo {
@@ -75,6 +70,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
+  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -85,19 +81,17 @@ p {
   }
 }
 
-
-
 /* footer */
 
 footer {
-	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid $grayMediumLight;
-	color: $grayLight;
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
   a {
     color: $gray;
     &:hover {
-    color: $grayDarker;
+      color: $grayDarker;
     }
   }
   small {
@@ -113,8 +107,6 @@ footer {
   }
 }
 
-
-
 /* miscellaneous */
 
 .debug_dump {
@@ -124,8 +116,6 @@ footer {
   margin-top: 45px;
   @include box_sizing;
 }
-
-
 
 /* sidebar */
 
@@ -152,7 +142,39 @@ aside {
   }
 }
 
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
 
 /* forms */
 
@@ -180,8 +202,6 @@ input {
   @extend .error;
 }
 
-
-
 /* Users index */
 
 .users {
@@ -196,8 +216,6 @@ input {
     }
   }
 }
-
-
 
 /* microposts */
 
